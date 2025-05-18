@@ -47,3 +47,13 @@ Update title and description:
 ```shell
 curl --header "Content-Type: application/json" --request PUT --data '{"id":19,"name":"New Café (UBT)","description":"My description","type":"CAFE","campus":"MAIN","street":"Teststraße","houseNumber":"99","postalCode":12345,"city":"Bayreuth"}%' http://localhost:8080/api/pos/19 # set correct task id here and in the body
 ```
+### Aufgabe 3.1.3 – curl-Befehle
+
+**POST:**
+```bash
+curl -X POST http://localhost:8080/api/pos \
+-H "Content-Type: application/json" \
+-d '{"name": "Stadtbäckerei Schaller GmbH", "city": "Bayreuth", "street": "Maximilianstraße 10"}'
+
+curl http://localhost:8080/api/pos
+# Änderung zum Auslösen von GitHub Actions
