@@ -45,5 +45,5 @@ curl.exe --% -H "Content-Type: application/json" --request POST --data "{\"name\
 
 Update title and description:
 ```shell
-curl --header "Content-Type: application/json" --request PUT --data '{"id":19,"name":"New Café (UBT)","description":"My description","type":"CAFE","campus":"MAIN","street":"Teststraße","houseNumber":"99","postalCode":12345,"city":"Bayreuth"}%' http://localhost:8080/api/pos/19 # set correct task id here and in the body
+curl.exe --% -H "Content-Type: application/json" --request PUT --data "{\"id\":7,\"name\":\"Stadtbaeckerei Schaller\",\"description\":\"Baeckerei mit anliegender Metzgerei, Drogerie und Supermarkt\",\"type\":\"CAFE\",\"campus\":\"MAIN\",\"street\":\"Nuernberger Straße\",\"houseNumber\":\"3b\",\"postalCode\":\"95448\",\"city\":\"Bayreuth\"}" "http://localhost:8080/api/pos/7" # set correct task id here and in the body
 ```
